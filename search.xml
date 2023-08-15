@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/08/15/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Hello-Hexo"><a href="#Hello-Hexo" class="headerlink" title="Hello Hexo"></a>Hello Hexo</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>第一篇文章</title>
+    <url>/2023/08/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h1 id="线性表的定义和特点"><a href="#线性表的定义和特点" class="headerlink" title="线性表的定义和特点"></a>线性表的定义和特点</h1><p>线性表是具有相同特性的数据元素的一个有限序列。如：(a_1,a_2,···,a_{i-1},a_i,a_{i+1},···,a_n)  </p>
+<ul>
+<li>a_1是线性起点(起始结点)，a_n是线性终点(终端结点)，中间任意元素为普通结点(数据元素)，</li>
+<li>a_{i-1}、a_{i+1}分别为a_i的直接前趋和直接后继</li>
+<li>a_i下标，”i”是元素的序号，表示元素a_i在表中的位置</li>
+<li>a_n下标，“n”是元素总个数，即表长。当n&#x3D;0时称为空表</li>
+</ul>
+<h2 id="线性表-Linear-List"><a href="#线性表-Linear-List" class="headerlink" title="线性表(Linear List)"></a>线性表(Linear List)</h2><ul>
+<li>线性表：由n(n&gt;&#x3D;0)个数据元素(结点)a_1,a_2,···,a_n组成的有限序列。<ul>
+<li>其中数据元素的个数n定义为表的长度。</li>
+<li>当n&#x3D;0时称为空表</li>
+<li>将非空的线性表(n&gt;0)记作：(a_1,a_2,···,a_n)  </li>
+<li>这里的数据元素a_i(1&lt;&#x3D;i&lt;&#x3D;n)只是一个抽象的符号，其具体含义在不同的情况下可以不同。</li>
+</ul>
+</li>
+</ul>
+<h3 id="线性表的例子"><a href="#线性表的例子" class="headerlink" title="线性表的例子"></a>线性表的例子</h3><ul>
+<li>例1   分析26个英文字母组成的英文表<ul>
+<li>(A,B,C,D,······,Z) 数据元素都是字母；元素之间关系是线性</li>
+</ul>
+</li>
+<li>例2   分析学生情况登记表 </li>
+<li>某单位历年拥有计算机的数量(6,17,28,50,92,188)</li>
+<li>十二星座(白羊座、金牛座、双子座、巨蟹座、狮子座、处女座、天秤座、天蝎座、射手座、摩羯座、水瓶座、双鱼座)</li>
+<li>总结：同一线性表中的元素必定具有相同特性，数据元素间的关系是线性关系</li>
+</ul>
+<h3 id="线性表的逻辑特征"><a href="#线性表的逻辑特征" class="headerlink" title="线性表的逻辑特征"></a>线性表的逻辑特征</h3><ul>
+<li>从以上例子可看出线性表的逻辑特征是：<ul>
+<li>在非空的线性表，有且仅有一个开始结点a_1,它没有直接前趋，而仅有一个直接后继a_2;</li>
+<li>有且仅有一个终端结点a_n,它没有直接后继，而仅有一个直接前趋a_{n-1};</li>
+<li>其余的内部结点a_i(2&lt;&#x3D;i&lt;&#x3D;n-1)都有且仅有一个直接前趋a_{i-1}和一个直接后继a_{i+1}。</li>
+</ul>
+</li>
+<li>总结：线性表是一种典型的的线性结构。</li>
+</ul>
+]]></content>
+  </entry>
+</search>
